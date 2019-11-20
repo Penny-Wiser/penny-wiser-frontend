@@ -6,13 +6,6 @@ export const fuseNavigationConfig = [
         'icon'    : 'apps',
         'children': [
             {
-                'id'   : 'example-component',
-                'title': 'Example',
-                'type' : 'item',
-                'icon' : 'whatshot',
-                'url'  : '/example'
-            },
-            {
                 'id'   : 'login',
                 'title': 'Login',
                 'type' : 'item',

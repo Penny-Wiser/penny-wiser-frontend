@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {withStyles} from '@material-ui/core/styles';
-import {withRouter} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import {Button, Card, CardContent, Typography, InputAdornment, Icon} from '@material-ui/core';
 import classNames from 'classnames';
 import {FuseAnimate, TextFieldFormsy} from '@fuse';
@@ -124,6 +124,11 @@ class Login extends Component {
                                     Login
                                 </Button>
                             </Formsy>
+
+                            <div className="flex flex-col items-center justify-center pt-32">
+                                <span className="font-medium">Don't have an account?</span>
+                                <Link className="font-medium" to="/register">Create an account</Link>
+                            </div>
                         </CardContent>
                     </Card>
                 </FuseAnimate>
