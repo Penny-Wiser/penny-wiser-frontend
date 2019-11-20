@@ -68,7 +68,7 @@ class Login extends Component {
                 <FuseAnimate animation={{translateX: [0, '100%']}}>
                     <Card className={classNames(classes.card, "mx-auto m-16 md:m-0")}>
                         <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
-                            <Typography variant="h6" className="text-center md:w-full mb-48">LOGIN TO YOUR ACCOUNT</Typography>
+                            <Typography variant="h6" className="text-center md:w-full mb-20">LOGIN TO YOUR ACCOUNT</Typography>
                             <Formsy
                                 className="flex flex-col justify-center w-full"
                                 onValid={this.enableButton}
