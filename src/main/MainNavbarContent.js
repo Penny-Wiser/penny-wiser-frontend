@@ -39,7 +39,7 @@ function MainNavbar({classes, navigation, layoutStyle, user})
     function UserHeader()
     {
         return (
-            <AppBar
+            user.role !== 'guest' && <AppBar
                 position="static"
                 color="primary"
                 elevation={0}

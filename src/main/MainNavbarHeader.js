@@ -34,7 +34,7 @@ function MainNavbarHeader({classes})
 {
     return (
         <div className={classes.root}>
-            <div className={classNames(classes.logo, "flex items-center")}>
+            {/* <div className={classNames(classes.logo, "flex items-center")}>
                 <img className={classNames(classes.logoIcon, "logo-icon")} src="assets/images/logos/fuse.svg" alt="logo"/>
                 <Typography className="text-16 ml-8 font-light logo-text" color="inherit">FUSE</Typography>
                 <div className={classNames(classes.reactBadge, "react-badge flex items-center ml-12 mr-8 py-4 px-8 rounded")}>
@@ -46,7 +46,7 @@ function MainNavbarHeader({classes})
                     />
                     <span className="react-text text-12 ml-4">React</span>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
