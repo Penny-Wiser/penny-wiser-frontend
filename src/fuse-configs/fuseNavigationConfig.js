@@ -11,6 +11,13 @@ export const fuseNavigationConfig = [
                 'type' : 'item',
                 'icon' : 'lock',
                 'url'  : '/login'
+            },
+            {
+                'id'   : 'register',
+                'title': 'Register',
+                'type' : 'item',
+                'icon' : 'person_add',
+                'url'  : '/register'
             }
         ]
     }

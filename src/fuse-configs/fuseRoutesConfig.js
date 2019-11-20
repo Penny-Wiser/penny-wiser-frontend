@@ -1,10 +1,12 @@
 import React from 'react';
 import {Redirect} from 'react-router-dom';
 import {FuseUtils} from '@fuse/index';
-import {LoginConfig} from 'main/content/login/LoginConfig'
+import {LoginConfig} from 'main/content/login/LoginConfig';
+import {RegisterConfig} from 'main/content/register/RegisterConfig';
 
 const routeConfigs = [
-    LoginConfig
+    LoginConfig,
+    RegisterConfig
 ];
 
 export const routes = [

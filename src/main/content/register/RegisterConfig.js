@@ -1,7 +1,7 @@
-import Login from './Login';
+import Register from './Register';
 import {authRoles} from 'auth';
 
-export const LoginConfig = {
+export const RegisterConfig = {
     settings: {
         layout: {
             config: {
@@ -20,11 +20,11 @@ export const LoginConfig = {
             }
         }
     },
-    auth    : authRoles.onlyGuest,
+    auth: authRoles.onlyGuest,
     routes: [
         {
-            path: '/login',
-            component: Login
+            path: '/register',
+            component: Register
         }
     ]
 };
