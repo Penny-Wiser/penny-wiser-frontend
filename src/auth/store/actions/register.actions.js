@@ -4,11 +4,12 @@ import jwtService from 'jwtService';
 export const REGISTER_ERROR = 'REGISTER_ERROR';
 export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
 
-export function submitRegister({displayName, password, email})
+export function submitRegister({firstName, lastName, password, email})
 {
     return (dispatch) =>
         jwtService.createUser({
-            displayName,
+            firstName,
+            lastName,
             password,
             email
         })

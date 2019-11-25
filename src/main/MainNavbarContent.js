@@ -45,7 +45,7 @@ function MainNavbar({classes, navigation, layoutStyle, user})
                 elevation={0}
                 className="user relative flex flex-col items-center justify-center pt-24 pb-64 mb-32 z-0"
             >
-                <Typography className="username text-16 whitespace-no-wrap" color="inherit">{user.data.displayName}</Typography>
+                <Typography className="username text-16 whitespace-no-wrap" color="inherit">{user.data.lastName}</Typography>
                 <Typography className="email text-13 mt-8 opacity-50 whitespace-no-wrap" color="inherit">{user.data.email}</Typography>
                 <Avatar
                     className={classNames(classes.avatar, "avatar")}

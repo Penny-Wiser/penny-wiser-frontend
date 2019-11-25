@@ -37,18 +37,23 @@ export function setUserDataAuth0(tokenData)
 export function setUserData(user)
 {
     return (dispatch) => {
-
         /*
         Set User Settings
          */
-        dispatch(setDefaultSettings(user.data.settings));
+        // dispatch(setDefaultSettings(user.data.settings));
 
         /*
         Set User Data
          */
+        const newUser = {
+            role: 'user',
+            data: {
+                ...user
+            }
+        }
         dispatch({
             type   : SET_USER_DATA,
-            payload: user
+            payload: newUser
         })
     }
 }

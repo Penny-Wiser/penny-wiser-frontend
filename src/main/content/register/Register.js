@@ -7,6 +7,7 @@ import {Button, Card, CardContent, Typography, InputAdornment, Icon} from '@mate
 import classNames from 'classnames';
 import {FuseAnimate, TextFieldFormsy} from '@fuse';
 import Formsy from 'formsy-react';
+import * as Actions from 'auth/store/actions';
 
 const styles = theme => ({
     root : {
@@ -33,6 +34,10 @@ class Register extends Component {
 
     disableButton = () => {
         this.setState({canSubmit: false});
+    }
+
+    onSubmit = (model) => {
+        this.props.submitRegister(model);
     }
 
     render() {
@@ -68,7 +73,7 @@ class Register extends Component {
                                 className="flex flex-col justify-center w-full"
                                 onValid={this.enableButton}
                                 onInvalid={this.disableButton}
-                                // onValidSubmit={}
+                                onValidSubmit={this.onSubmit}
                             >
                                 <TextFieldFormsy
                                     className="mb-16"
@@ -178,13 +183,15 @@ class Register extends Component {
     }
 }
 
-function mapDispatchToProps({dispatch}) {
+function mapDispatchToProps(dispatch) {
     return bindActionCreators({
+        submitRegister: Actions.submitRegister
     }, dispatch);
 }
 
 function mapStateToProps({auth}) {
     return {
+        register: auth.register,
         user: auth.user
     }
 }

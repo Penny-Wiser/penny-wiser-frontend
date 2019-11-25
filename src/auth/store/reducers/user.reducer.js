@@ -3,7 +3,7 @@ import * as Actions from '../actions';
 const initialState = {
     role: 'guest',
     data: {
-        'displayName': 'Not logged in',
+        'lastName': 'Not logged in',
         'photoURL'   : '',
         'email'      : 'Unknown',
         shortcuts    : [
