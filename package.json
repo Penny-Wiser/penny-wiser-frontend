@@ -73,7 +73,7 @@
         "marked": "0.5.2",
         "postcss-cli": "6.0.1",
         "tailwindcss": "0.7.2",
-        "webpack-bundle-analyzer": "3.0.3"
+        "webpack-bundle-analyzer": "3.3.2"
     },
     "browserslist": [
         ">0.2%",
