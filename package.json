@@ -10,7 +10,7 @@
         "axios": "0.18.0",
         "axios-mock-adapter": "1.15.0",
         "babel-polyfill": "7.0.0-beta.3",
-        "chart.js": "2.7.3",
+        "chart.js": "2.9.4",
         "downshift": "3.1.5",
         "firebase": "5.5.9",
         "formsy-react": "1.1.5",
